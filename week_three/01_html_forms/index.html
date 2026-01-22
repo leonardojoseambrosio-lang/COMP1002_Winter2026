@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Week 3 - HTML Forms Example</title>
+     <style>
+          input {
+               display:block; 
+          }
+
+          input[type="submit"] {
+               margin-top: 1rem; 
+          }
+          label {
+               display:block; 
+               margin: 1rem 0; 
+          }
+     </style>
+</head>
+
+<body>
+     <h1> Student Information</h1>
+
+     <form method="post" action="">
+          <fieldset> <!-- groups like info/parts of the form-->
+               <legend> Student Details </legend><!--explains the info that is contained in the fieldset-->
+               <!--full name -->
+               <label for="fullname">Full Name:</label>
+               <input type="text" name="fullname" id="fullname">
+                <!--email -->
+               <label for="email">Email:</label>
+               <input type="text" name="email" id="email" placeholder="email">
+
+               <!--date of birth-->
+               <label for="birthday">Date of Birth:</label>
+               <input type="text" name="birthday" id="birthday">
+
+               <!--program-->
+               <label for="program">Program</label>
+               <select id="program" name="program">
+                    <option value=""> Select Your Program </option>
+                    <option value="computer_programming">Computer Programming </option>
+                    <option value="web_development">Web Development </option>
+                    <option value="cybersecurity"> Cybersecurity</option>
+               </select>
+
+               <!--Password-->
+               <label for="password">Password:</label>
+               <input type="text" name="password" id="password">
+               <!--Password Confirm-->
+               <label for="password_confirm">Confirm Password:</label>
+               <input type="text" name="password_confirm" id="password_confirm">
+
+               <!--submit button-->
+               <input type="submit" value="Submit Form">
+
+          </fieldset>
+     </form>  
+</body>
+
+</html>
