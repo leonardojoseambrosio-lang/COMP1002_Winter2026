@@ -1,0 +1,139 @@
+/* =========================
+   Base styling (not layout)
+   ========================= */
+
+/* Activity Two - Explore the CSS Style Ruleset */
+body {
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 16px;
+}
+
+.page-header,
+.page-footer {
+  border: 2px dashed #999;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.lab-section {
+  border: 2px solid #ddd;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+code {
+  background: #f2f2f2;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* =========================
+     SECTION 1: Selector types
+     ========================= */
+
+/* Activity Three - Selector Types */
+
+/* Element selector */
+
+
+/* Contextual selector (descendant)  - look up combinators on mdn web docs */
+
+
+/* Pseudo-class: first paragraph of its type */
+
+
+/* Class selector */
+
+/* Attribute selector (article attribute affects paragraph) */
+
+
+/* ID selector (strongest so far) */
+
+
+/* Pseduo - Element */
+
+
+
+/* Focus Questions 
+
+        1.) How many different CSS rules are applied to the first paragraph?
+        (List them by selector type.)
+
+        2.) Which rules are crossed out in DevTools, and which ones are active?
+        What does a crossed-out rule indicate?
+
+        3.) Predicting Before Explaining
+
+        4.) Before inspecting, which rule do you think should control the text color? Why?
+        What information did you use to make that prediction?
+
+        5.) If two rules change the same property (for example, color), why doesn’t the browser apply both?
+
+*/
+
+
+/* ==============================
+     SECTION 2: Cascade & Specificity
+     ============================== */
+
+/* Activity #4 - Which Seletor Will Win */
+
+/* ROUND ONE/ Q1 - What colour will the element be? */
+
+/* Element selector */
+
+
+
+/* ROUND TWO/ Q2 - What background colour will the element have? */
+
+
+
+/* ROUND THREE/ Q3 - What colour will the element be? */
+
+
+
+/* =========================
+     SECTION 3: Box model (form)
+     ========================= */
+
+/* Activity #5 - Exolore the Box Model */
+
+.signup-form {
+  margin-top: 12px;
+}
+
+/* Visualize the box */
+
+
+/* Each field becomes a visible block with spacing */
+.field {
+  display: block;
+  border: 2px dashed #aaa;
+  padding: 10px;
+}
+
+.field span {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Inputs/selects: give visible borders so students can inspect sizing */
+.field input,
+.field select {
+ 
+}
+
+/* Primary button */
+.primary {
+  font-weight: 700;
+}
+
+/* Focus Questions
+  1) In DevTools, click the fieldset (.form-box). What are its margin, border, padding, and content sizes?
+  2) Increase padding on .form-box in styles.css. What changes visually?
+  3) Where is the space coming from between form fields — margin or padding? Identify the exact rule.
+  4) Add a border to .field input and use DevTools to find the exact box size.
+*/
