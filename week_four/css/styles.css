@@ -87,11 +87,27 @@ code {
 
 
 /* ROUND TWO/ Q2 - What background colour will the element have? */
+.quiz-item{
 
+  background-color: #C0FFEE;
+}
+
+.highlight{
+  background-color: #d3ed0b;
+}
 
 
 /* ROUND THREE/ Q3 - What colour will the element be? */
 
+p[data-level="hard"]{
+
+  background-color: red;
+}
+
+.quiz-item{
+
+  background-color: orange;
+}
 
 
 /* =========================
@@ -105,6 +121,12 @@ code {
 }
 
 /* Visualize the box */
+.form-box{
+display:block;
+border: 2px dashed red;
+padding-bottom: 20px;
+margin: 100px 30px 40px 10px;
+}
 
 
 /* Each field becomes a visible block with spacing */
@@ -123,6 +145,12 @@ code {
 /* Inputs/selects: give visible borders so students can inspect sizing */
 .field input,
 .field select {
+
+  width: 100%;
+  border:2px solid #666;
+  padding: : 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
  
 }
 
