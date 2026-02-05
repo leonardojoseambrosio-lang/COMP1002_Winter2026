@@ -1,0 +1,196 @@
+/* =========================
+   Base styling (not layout)
+   ========================= */
+
+/* Activity Two - Explore the CSS Style Ruleset */
+body {
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 16px;
+}
+
+.page-header,
+.page-footer {
+  border: 2px dashed #BADA55;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.lab-section {
+  border: 2px solid #ddd;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+code {
+  background: #f2f2f2;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* =========================
+     SECTION 1: Selector types
+     ========================= */
+
+/* Activity Three - Selector Types */
+
+/* Element selector */
+
+p {
+  color : #333; 
+}
+
+/* Contextual selector (descendant)  - look up combinators on mdn web docs */
+
+article > p {
+  color: #1a5fb4; 
+}
+
+/* Pseudo-class: first paragraph of its type */
+p:hover {
+  color: red; 
+}
+
+/* Class selector */
+.note {
+  color:#ff598f; 
+}
+
+/* Attribute selector */
+
+article[data-role="student"] {
+  background-color: #BADA55; 
+}
+
+/* ID selector (strongest so far) */
+
+#special-note {
+  color: #ff3800;
+}
+
+/* Pseduo - Element */
+article p:first-of-type::before {
+  content: "FIRST PARAGRAPH";
+  color: #000; 
+}
+
+
+/* Focus Questions 
+
+        1.) How many different CSS rules are applied to the first paragraph?
+        (List them by selector type.)
+
+        2.) Which rules are crossed out in DevTools, and which ones are active?
+        What does a crossed-out rule indicate?
+
+        3.) Predicting Before Explaining
+
+        4.) Before inspecting, which rule do you think should control the text color? Why?
+        What information did you use to make that prediction?
+
+        5.) If two rules change the same property (for example, color), why doesn’t the browser apply both?
+
+*/
+
+
+/* ==============================
+     SECTION 2: Cascade & Specificity
+     ============================== */
+
+/* Activity #4 - Which Seletor Will Win */
+
+/* ROUND ONE/ Q1 - What colour will the element be? */
+
+/* Element selector */
+
+p {
+  color: #BADA55; 
+}
+
+#q1 {
+  color: red;
+}
+
+.quiz-item {
+  color: blue; 
+}
+
+
+
+/* ROUND TWO/ Q2 - What background colour will the element have? */
+
+.quiz-item {
+  background-color: #C0FFEE; 
+}
+
+.highlight {
+  background-color: #BADA55; 
+}
+
+/* ROUND THREE/ Q3 - What colour will the element be? */
+
+p[data-level="hard"] {
+  background-color: red; 
+}
+
+.quiz-item {
+  background-color: orange; 
+}
+
+
+/* =========================
+     SECTION 3: Box model (form)
+     ========================= */
+
+/* Activity #5 - Exolore the Box Model */
+
+.signup-form {
+  margin-top: 12px;
+}
+
+/* Visualize the box */
+
+.form-box {
+  display:block; 
+  border: 2px dashed red; 
+  padding-bottom: 20px;  
+  margin: 100px 30px 40px 10px; 
+
+}
+
+/* Each field becomes a visible block with spacing */
+.field {
+  display: block;
+  border: 2px dashed #aaa;
+  padding: 10px;
+  margin: 10px 0; 
+}
+
+.field span {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Inputs/selects: give visible borders so students can inspect sizing */
+.field input,
+.field select {
+  width: 100%; 
+  border: 2px solid #999; 
+  padding: 10px; 
+  box-sizing: border-box;
+  border-radius: 2px; 
+}
+
+/* Primary button */
+.primary {
+  font-weight: 700;
+}
+
+/* Focus Questions
+  1) In DevTools, click the fieldset (.form-box). What are its margin, border, padding, and content sizes?
+  2) Increase padding on .form-box in styles.css. What changes visually?
+  3) Where is the space coming from between form fields — margin or padding? Identify the exact rule.
+  4) Add a border to .field input and use DevTools to find the exact box size.
+*/

@@ -1,0 +1,37 @@
+/* The Challenge 
+I wanted my page heading (h1) to be #BADA55, but it keeps showing up a different colour.
+😩Help! What’s going on?
+
+Your task is to:
+    - Figure out which CSS rule is winning
+    - Explain why it wins
+    - Fix the issue without deleting any CSS
+*/
+
+body {
+    color: #222;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1,
+  h2 {
+    color: #BADA55;
+  }
+  
+  .site-header h1 {
+    color: orange;
+  }
+  
+  .page-title {
+    color: blue;
+  }
+  
+  .intro {
+    background: #eee;
+    padding: 1rem;
+  }
+  
+  .intro h2 {
+    color: purple;
+  }
+  
