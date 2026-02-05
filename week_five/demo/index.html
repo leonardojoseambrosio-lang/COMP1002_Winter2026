@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP1002 - Week Five</title>
+
+    <!-- Link to demo CSS -->
+    <!--link rel="stylesheet" href="styles/normalize.css"-->
+    <!--link rel="stylesheet" href="styles/reset.css"-->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/demo.css" />
+</head>
+
+<body>
+    <!-- Header / Sticky Navigation -->
+    <div class="container">
+        <header>
+            <nav aria-label="Primary navigation">
+                <h1>COMP1002 - Text Styling, Box Model, Display & Position</h1>
+
+                <ul>
+                    <li><a href="#text">Text</a></li>
+                    <li><a href="#box-model">Box Model</a></li>
+                    <li><a href="#display">Display</a></li>
+                    <li><a href="#position">Position</a></li>
+                    <li><a href="#flexbox">Flexbox</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Intro -->
+            <section>
+                <h2>Styling Text & Layout Fundamentals</h2>
+                <p>
+                    This page is used to demonstrate core CSS concepts including text
+                    styling, the box model, display behaviors, positioning, and an
+                    introduction to flexbox.
+                </p>
+            </section>
+
+            <!-- Text Styling -->
+            <section id="text">
+                <h2>Text Styling</h2>
+                <p>
+                    Typography affects readability, hierarchy, and usability. Adjusting
+                    font size, line height, and spacing can dramatically change how
+                    content feels.
+                </p>
+            </section>
+
+            <!-- Box Model -->
+            <section id="box-model">
+                <h2>Box Model</h2>
+                <p>
+                    Every element is a box composed of content, padding, border, and
+                    margin.
+                </p>
+                <ul>
+                    <li>Padding creates space inside the element</li>
+                    <li>Border wraps around content and padding</li>
+                    <li>Margin creates space outside the element</li>
+                </ul>
+            </section>
+
+            <!-- Display -->
+            <section id="display">
+                <h2>Display</h2>
+                <p>
+                    Inline elements flow with text, while block elements start on new
+                    lines and take up the full width available.
+                </p>
+
+                <!-- Span elements for display demo -->
+                <span>Inline A</span>
+                <span>Inline B</span>
+                <span>Inline C</span>
+            </section>
+
+            <!-- Positioning -->
+            <section id="position" class="pos-demo">
+                <h2>Positioning</h2>
+
+                <!-- Badge for positioning demo -->
+                <span class="badge">New</span>
+
+                <p>
+                    Positioning allows elements to be offset, layered, or removed from
+                    the normal document flow.
+                </p>
+                <p>
+                    This badge is absolutely positioned relative to this section.
+                </p>
+            </section>
+
+            <!-- Flexbox -->
+            <section id="flexbox">
+                <h2>Intro to Flexbox</h2>
+                <p>
+                    Flexbox is a one-dimensional layout system for arranging items in a
+                    row or column.
+                </p>
+
+                <!-- Flex items -->
+                <div>
+                    <div>Flex Item One</div>
+                    <div>Flex Item Two</div>
+                    <div>Flex Item Three</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>COMP1002 — CSS Fundamentals Demo</p>
+        </footer>
+    </div><!--end container-->
+</body>
+
+</html>

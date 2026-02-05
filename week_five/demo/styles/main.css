@@ -1,0 +1,120 @@
+/* =========================================================
+   COMP1002 Demo CSS 
+   Goals: reset → text → box model → display → positioning → flexbox
+========================================================= */
+
+/* =========================================================
+   STEP 1 — 
+   - open the html in the browser without CSS, what default styles do you notice? Are these helpful? 
+   - show reset.css
+   - show normalize.css
+   A simple reset (normalize-ish)
+   - Removes default margins/padding
+   - Makes sizing predictable with border-box
+   - explore exisiting style rules 
+========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* padding/border included in size calculations */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #111;
+
+}
+
+/* create a container 
+what kind of selector is this? */ 
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main content panel */
+main {
+  background: #eee;
+}
+
+/* =========================================================
+  STEP TWO  — Let's Add Some Style To Our Text
+========================================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
+}
+
+/* Optional: Make the nav title readable on dark header */
+nav h1 {
+  color: #fff;
+}
+/* =========================================================
+   STEP THREE — Let's Add Some Space 
+========================================================= */
+section {
+    background: #fff;      /* makes sections stand out on main's gray */
+  }
+
+
+/* =========================================================
+   Step Four — Postioning - Creating a Sticky Header & Nav Styling & Flexbox Intro  
+
+========================================================= */
+
+/* Sticky means:
+   - It scrolls normally until it reaches top: 0
+   - Then it "sticks" without being removed from layout flow like fixed */
+header {
+ 
+}
+
+/* Give the nav area some internal space */
+nav {
+
+}
+
+/* Flexbox is ideal for horizontal nav links */
+nav ul {
+
+}
+
+
+nav a {
+  
+}
+
+
+/* Link state demo  */
+nav a:visited {
+  opacity: 0.9; /* visited links look slightly different */
+}
+
+nav a:focus {
+  outline: 2px solid #333; /* focus ring is more accessible than border-jumping */
+  outline-offset: 2px;
+}
+
+nav a:hover {
+  color: #ff8c00;
+}
+
+nav a:active {
+  color: #ff8c00;
+}
+
+footer {
+  color: #fff;
+  padding: 1rem 0;
+}
+
+footer p {
+  padding: 0.5rem 0;
+}

@@ -1,0 +1,49 @@
+/* =========================================================
+   Display demo hooks (optional)
+   If your HTML has spans inside #display section, you can demo:
+   - inline vs inline-block vs block
+========================================================= */
+
+/* Example: make inline items visible without changing their display yet */
+#display span {
+    border: 1px dashed #999;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.25rem; /* margin works on inline horizontally */
+  }
+  
+  /* Teaching toggle:
+     Try changing the line below to `inline`, `inline-block`, and `block`.
+     - inline: ignores width/height, flows with text
+     - inline-block: respects box sizing, still flows inline
+     - block: stacks vertically and takes full width
+  */
+  /* #display span { display: inline-block; } */
+  
+  /* =========================================================
+     Positioning demo hooks (optional)
+     Better: demonstrate positioning on a small element (badge)
+     rather than using fixed header/footer hacks.
+  
+     If your HTML includes something like:
+     <section id="position" class="pos-demo">
+       <p class="badge">New</p>
+       ...
+     </section>
+  ========================================================= */
+  .pos-demo {
+    position: relative; /* establishes a positioning context for absolutely positioned children */
+  }
+  
+  .pos-demo .badge {
+    position: absolute; /* removed from normal flow */
+    top: 12px;
+    right: 12px;
+  
+    background: rgba(255, 140, 0, 0.15);
+    border: 1px solid #ff8c00;
+    color: #111;
+  
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
